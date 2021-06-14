@@ -2,11 +2,12 @@
   "name": "strm-action-handler",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
+    "build": "babel -d ./dist ./src -s",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,5 +15,11 @@
   "dependencies": {
     "fast-json-patch": "^3.0.0-1",
     "jsonpath": "^1.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.0",
+    "@babel/core": "^7.14.0",
+    "@babel/node": "^7.14.0",
+    "@babel/preset-env": "^7.14.0"
   }
 }
